@@ -37,14 +37,14 @@ cask "forecast-ledger" do
 
   binary "forecast-ledger"
 
-  postflight do
+  preflight do
     if OS.mac?
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/forecast-ledger"]
+      system_command "/usr/bin/codesign", args: ["--force", "--sign", "-", "#{staged_path}/forecast-ledger"]
     end
   end
   generate_completions_from_executable "forecast-ledger", "completion",
     base_name: "forecast-ledger",
-    shell_parameter_format: :arg,
     shells: [:bash, :zsh, :fish]
 
   # No zap stanza required
