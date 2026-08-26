@@ -2,26 +2,26 @@
 class ForecastLedger < Formula
   desc "Create and verify portable forecast evidence"
   homepage "https://chaoscondensate.com/"
-  version "0.1.1"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chaoscondensate/cli/releases/download/v0.1.1/forecast-ledger_0.1.1_darwin_arm64.tar.gz"
-      sha256 "ca8d97c2b10ed1889e7c14f1a962ae68453fa4cba13c62242f529452618161cd"
+      url "https://github.com/chaoscondensate/cli/releases/download/v0.2.1/forecast-ledger_0.2.1_darwin_arm64.tar.gz"
+      sha256 "70cb1872c85c92031ac19ac0ebeeb6ddae0b5b24cd5710339cad761f96d91bf3"
     else
-      url "https://github.com/chaoscondensate/cli/releases/download/v0.1.1/forecast-ledger_0.1.1_darwin_x86_64.tar.gz"
-      sha256 "a36660d7ccfbc415b3fc200a52e628c58ca9ae927e64cb852ab553a888f9d816"
+      url "https://github.com/chaoscondensate/cli/releases/download/v0.2.1/forecast-ledger_0.2.1_darwin_x86_64.tar.gz"
+      sha256 "6abfda4686023e6806016302c2f4c6c4401ecce969e7ad73b7ca4ced317d258b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chaoscondensate/cli/releases/download/v0.1.1/forecast-ledger_0.1.1_linux_arm64.tar.gz"
-      sha256 "1cef30f0173d7f93f4e40218be9100097643e931e9f80818cd0ec3af0df977c8"
+      url "https://github.com/chaoscondensate/cli/releases/download/v0.2.1/forecast-ledger_0.2.1_linux_arm64.tar.gz"
+      sha256 "f841c539203a0858cd6ad5cf626b37b3bc388612ee20907ee927d8ae2107569f"
     else
-      url "https://github.com/chaoscondensate/cli/releases/download/v0.1.1/forecast-ledger_0.1.1_linux_x86_64.tar.gz"
-      sha256 "8449d41d89ac20a9f01b5467c9305af487a6eb6a6f454a4cc1fd31737fe7a1cb"
+      url "https://github.com/chaoscondensate/cli/releases/download/v0.2.1/forecast-ledger_0.2.1_linux_x86_64.tar.gz"
+      sha256 "52d7a7f76335c1b4d3bfd286ec3121a0b7869c46e4607c179ad49c958dfa24b9"
     end
   end
 
