@@ -2,26 +2,26 @@
 class ForecastLedger < Formula
   desc "Create and verify portable forecast evidence"
   homepage "https://chaoscondensate.com/"
-  version "0.8.0"
+  version "0.9.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.8.0/forecast-ledger_0.8.0_darwin_arm64.tar.gz"
-      sha256 "38e3712046513cff0a63fc128f79dc494de9c2af02928402bb42045c25e6f4e0"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.0/forecast-ledger_0.9.0_darwin_arm64.tar.gz"
+      sha256 "350c5de608fec968ce2c3944bdb985f148769f760b1a138c76a94613cc08cda5"
     else
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.8.0/forecast-ledger_0.8.0_darwin_x86_64.tar.gz"
-      sha256 "c1dfa411b6a335d86aef7becb8ef51567a80e03f1499d85f3ec8639a2480055a"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.0/forecast-ledger_0.9.0_darwin_x86_64.tar.gz"
+      sha256 "db65e0555587db26198088176da959035b45a8a34a9375ccd645817f864ab4e9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.8.0/forecast-ledger_0.8.0_linux_arm64.tar.gz"
-      sha256 "5036276d8840ff19592ec96949653021d3df9a5968cf87db13f83270467677e9"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.0/forecast-ledger_0.9.0_linux_arm64.tar.gz"
+      sha256 "dd73c3b4cf3d9dfa8185931441727cdb49e3b8660d8a24e6a6d1b001418e296b"
     else
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.8.0/forecast-ledger_0.8.0_linux_x86_64.tar.gz"
-      sha256 "223770bde763e8d0394d16c92391c231ac0296f0020ed94d3dfaedea44000be9"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.0/forecast-ledger_0.9.0_linux_x86_64.tar.gz"
+      sha256 "e3abe839b85f9dd3cd15f9e03a177df2a05ca91b880ce8d829b74c9ef80c3e59"
     end
   end
 
