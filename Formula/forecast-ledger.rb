@@ -2,26 +2,26 @@
 class ForecastLedger < Formula
   desc "Create and verify portable forecast evidence"
   homepage "https://chaoscondensate.com/"
-  version "0.9.0"
+  version "0.9.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.0/forecast-ledger_0.9.0_darwin_arm64.tar.gz"
-      sha256 "350c5de608fec968ce2c3944bdb985f148769f760b1a138c76a94613cc08cda5"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.1/forecast-ledger_0.9.1_darwin_arm64.tar.gz"
+      sha256 "8735173064025c0a7ad4c1710f91c31c78129ce27eed6069aafd3e84dc741c91"
     else
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.0/forecast-ledger_0.9.0_darwin_x86_64.tar.gz"
-      sha256 "db65e0555587db26198088176da959035b45a8a34a9375ccd645817f864ab4e9"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.1/forecast-ledger_0.9.1_darwin_x86_64.tar.gz"
+      sha256 "3b5ee19144e5d8c91bc423e55941d1d2738b92f64043da05e7e9d3893511e4ec"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.0/forecast-ledger_0.9.0_linux_arm64.tar.gz"
-      sha256 "dd73c3b4cf3d9dfa8185931441727cdb49e3b8660d8a24e6a6d1b001418e296b"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.1/forecast-ledger_0.9.1_linux_arm64.tar.gz"
+      sha256 "0738bffab101a6179ed77f5558f56a6cc5d2e6b62ae2df109e2adfd897c94bd8"
     else
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.0/forecast-ledger_0.9.0_linux_x86_64.tar.gz"
-      sha256 "e3abe839b85f9dd3cd15f9e03a177df2a05ca91b880ce8d829b74c9ef80c3e59"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.1/forecast-ledger_0.9.1_linux_x86_64.tar.gz"
+      sha256 "7af3804da6adbbe598569dc7e735a10782d6e3e281f32196f76adca26056ee73"
     end
   end
 
