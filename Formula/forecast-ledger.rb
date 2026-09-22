@@ -2,26 +2,26 @@
 class ForecastLedger < Formula
   desc "Create and verify portable forecast evidence"
   homepage "https://chaoscondensate.com/"
-  version "0.9.1"
+  version "0.10.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.1/forecast-ledger_0.9.1_darwin_arm64.tar.gz"
-      sha256 "8735173064025c0a7ad4c1710f91c31c78129ce27eed6069aafd3e84dc741c91"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.10.0/forecast-ledger_0.10.0_darwin_arm64.tar.gz"
+      sha256 "39c0fc14e97a961aa253443fbc149c8b2df2810369faf62ee2e99d0ce6f609cd"
     else
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.1/forecast-ledger_0.9.1_darwin_x86_64.tar.gz"
-      sha256 "3b5ee19144e5d8c91bc423e55941d1d2738b92f64043da05e7e9d3893511e4ec"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.10.0/forecast-ledger_0.10.0_darwin_x86_64.tar.gz"
+      sha256 "a27b6d937cba3946c4712b041a6430442e37bd7eeef2a427dc18e35faccdce73"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.1/forecast-ledger_0.9.1_linux_arm64.tar.gz"
-      sha256 "0738bffab101a6179ed77f5558f56a6cc5d2e6b62ae2df109e2adfd897c94bd8"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.10.0/forecast-ledger_0.10.0_linux_arm64.tar.gz"
+      sha256 "3a74146968134c32be02fc7d731f145cb1ac59c030e422f1b5735833ba141614"
     else
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.9.1/forecast-ledger_0.9.1_linux_x86_64.tar.gz"
-      sha256 "7af3804da6adbbe598569dc7e735a10782d6e3e281f32196f76adca26056ee73"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.10.0/forecast-ledger_0.10.0_linux_x86_64.tar.gz"
+      sha256 "8f3e86c0a5490ef019ac61c47bcdbc125d4d26042d2cc3ea4c2f568a9e6fc868"
     end
   end
 
