@@ -2,26 +2,26 @@
 class ForecastLedger < Formula
   desc "Create and verify portable forecast evidence"
   homepage "https://chaoscondensate.com/"
-  version "0.10.0"
+  version "0.11.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.10.0/forecast-ledger_0.10.0_darwin_arm64.tar.gz"
-      sha256 "39c0fc14e97a961aa253443fbc149c8b2df2810369faf62ee2e99d0ce6f609cd"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.11.0/forecast-ledger_0.11.0_darwin_arm64.tar.gz"
+      sha256 "8ad7c298f6d006e486aaac3237eb3c86c10583cae320f5b40459fcad966b5f15"
     else
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.10.0/forecast-ledger_0.10.0_darwin_x86_64.tar.gz"
-      sha256 "a27b6d937cba3946c4712b041a6430442e37bd7eeef2a427dc18e35faccdce73"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.11.0/forecast-ledger_0.11.0_darwin_x86_64.tar.gz"
+      sha256 "5e1b0df98a68bfc6281f6c367efee234792a558b7ffcba5d3a92274e3bc0703d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.10.0/forecast-ledger_0.10.0_linux_arm64.tar.gz"
-      sha256 "3a74146968134c32be02fc7d731f145cb1ac59c030e422f1b5735833ba141614"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.11.0/forecast-ledger_0.11.0_linux_arm64.tar.gz"
+      sha256 "35a80b81cee8368f1f2ebb0654ba28dc2c0a2c72aa3bc207080056e80dd9ec3b"
     else
-      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.10.0/forecast-ledger_0.10.0_linux_x86_64.tar.gz"
-      sha256 "8f3e86c0a5490ef019ac61c47bcdbc125d4d26042d2cc3ea4c2f568a9e6fc868"
+      url "https://github.com/chaoscondensate/forecast-ledger/releases/download/v0.11.0/forecast-ledger_0.11.0_linux_x86_64.tar.gz"
+      sha256 "cc4c8cb0bd610d015cbf4dc378e7badebb3442428e7f57e46406776199264aea"
     end
   end
 
